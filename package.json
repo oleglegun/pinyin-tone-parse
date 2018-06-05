@@ -1,0 +1,29 @@
+{
+    "name": "pinyin-tone-parse",
+    "version": "0.0.1",
+    "description": "Parse Pinyin tone numbers.",
+    "main": "index.js",
+    "scripts": {
+        "test": "tap test/*.js",
+        "cover": "tap test/*.js --coverage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oleglegun/pinyin-tone-parse.git"
+    },
+    "keywords": [
+        "pinyin",
+        "chinese",
+        "parser",
+        "split"
+    ],
+    "author": "Oleg Legun <oleg.legun@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/oleglegun/pinyin-tone-parse/issues"
+    },
+    "homepage": "https://github.com/oleglegun/pinyin-tone-parse#readme",
+    "devDependencies": {
+        "tap": "^12.0.1"
+    }
+}
