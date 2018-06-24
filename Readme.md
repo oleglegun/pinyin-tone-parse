@@ -20,8 +20,8 @@ toneParse('Ni3 hao3 ma5?')
 // [[ 'Ni', 3 ], ' ', [ 'hao', 3 ], ' ',[ 'ma', 5 ], '?']
 
 // Composite words
-toneParse('Zhong1guo2ren2 hai2shi5 Éguórén?')
-// [['Zhong', 1], ['guo', 2], ['ren', 2], ' ', ['hai', 2], ['shi', 5], ' ', ['E', 2], ['guo', 2], ['ren', 2], '?']
+toneParse('Zhong1guo2ren2 hai2shi5 e2guo2ren2?')
+// [['Zhong', 1], ['guo', 2], ['ren', 2], ' ', ['hai', 2], ['shi', 5], ' ', ['e', 2], ['guo', 2], ['ren', 2], '?']
 ```
 
 ## Options
