@@ -5,8 +5,6 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-## Synopsis
-
 Easily parse pinyin tone numbers.
 
 ## Installation
@@ -20,6 +18,10 @@ const toneParse = require('pinyin-tone-parse')
 
 toneParse('Ni3 hao3 ma5?')
 // [[ 'Ni', 3 ], ' ', [ 'hao', 3 ], ' ',[ 'ma', 5 ], '?']
+
+// Composite words
+toneParse('Zhong1guo2ren2 hai2shi5 Éguórén?')
+// [['Zhong', 1], ['guo', 2], ['ren', 2], ' ', ['hai', 2], ['shi', 5], ' ', ['E', 2], ['guo', 2], ['ren', 2], '?']
 ```
 
 ## Options
