@@ -30,6 +30,7 @@ toneParse('Zhong1guo2ren2 hai2shi5 e2guo2ren2?')
 | -------------- | :-----------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `allowUntoned` | true          | Set to `false` to throw `MissingToneNumberError` on each untoned word. Helps manually validate input.                                                                                                   |
 | `allowAnyChar` | false         | By default throws `UnrecognizedCharacterError` on any character that is not in the `A-Za-z0-9.。,:;?!-–` set. Set to `true` to omit this error. Correct parsing results in this case are not guaranteed. |
+| `remark`       | false         | If pinyin already contains a tone mark, then by default the tone mark is left in place and that pinyin syllable is labeled with `null` in the output. Set this to `true` and existing tone marks will be replaced with an unmarked ASCII character and the pinyin syllable will be labeled with the correspond tone number. |
 
 
 ```js
