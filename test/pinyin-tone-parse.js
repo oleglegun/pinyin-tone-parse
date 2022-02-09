@@ -69,6 +69,45 @@ const testCasesValid = [
         text: 'Ni3 ne?',
         result: [['Ni', 3], ' ', ['ne', 5], '?'],
     },
+    {
+        options: {},
+        text: 'Yě kěyǐ.',
+        result: [['Yě', null], ' ', ['kěyǐ', null], '.'],
+    },
+    {
+        options: {},
+        text: 'Nǐ yao4 bu4yào wǒ de gou3?',
+        result: [
+            ['Nǐ', null], ' ', ['yao', 4], ' ', ['bu', 4], ['yào', null], ' ',
+            ['wǒ', null], ' ', ['de', 5], ' ', ['gou', 3], '?'],
+    },
+    {
+        options: { allowAnyChar: true },
+        text: 'nǐ hǎo！',
+        result: [['nǐ', null], ' ', ['hǎo', null], '！']
+    },
+    {
+        options: { remark: true },
+        text: 'Yě kěyǐ.',
+        result: [['Ye', 3], ' ', ['keyi', 3], '.'],
+    },
+    {
+        options: { remark: true },
+        text: 'Nǐ yao4 bu4yào wǒ de gou3?',
+        result: [
+            ['Ni', 3], ' ', ['yao', 4], ' ', ['bu', 4], ['yao', 4], ' ',
+            ['wo', 3], ' ', ['de', 5], ' ', ['gou', 3], '?'],
+    },
+    {
+        options: { allowAnyChar: true, remark: true },
+        text: 'nǐ hǎo！',
+        result: [['ni', 3], ' ', ['hao', 3], '！']
+    },
+    {
+        options: { allowAnyChar: true },
+        text: 'ni3hao3。 yi1，er2，san1！',
+        result: [['ni', 3], ['hao', 3], '。', ' ', ['yi', 1], '，', ['er', 2], '，', ['san', 1], '！'],
+    }
 ]
 
 testCasesValid.forEach(test => {
